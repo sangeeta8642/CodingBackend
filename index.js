@@ -348,6 +348,11 @@ app.put("/deleteImage/:Id",async(req,res)=>{
   res.send(user)
 })
 
+app.get("/",(req,res)=>{
+  console.log("Hello World");
+  res.status(200).send("Hello World")
+})
+
 app.listen(5000, () => {
   console.log(`Server is running on port 5000`);
 });
